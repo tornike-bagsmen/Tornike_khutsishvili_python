@@ -9,6 +9,6 @@ def main():
     time = datetime.datetime(year, month, number)
     time = time.strftime("%A")
 
-    week_days_in_georgian(time)
+    print(f"ეს დღე იყო {week_days_in_georgian(time)}")
 
 main()

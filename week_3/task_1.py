@@ -7,3 +7,10 @@ def main():
     my_square_form(first_num, second_num)
 
 main()
+
+# მარტივი ხერხი
+# import math
+
+# first_num = int(input("გთხოვთ ჩაწეროთ რიცხვი : "))
+# second_num = int(input("რომელ ხარისხში გსურთ თქვენი რიცხვის აყვანა? "))
+# print(math.pow(first_num, second_num))

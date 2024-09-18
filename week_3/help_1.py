@@ -1,5 +1,5 @@
 import random
-# import requests
+import math 
 
 def my_square_form(first_num, second_num):
 
@@ -14,28 +14,23 @@ def random_numbers():
     upper_num = 10000
 
     random_float = random.uniform(lower_num, upper_num)
-    print(round(random_float,2))
+    return(math.floor(random_float * 10) / 10)
 
 
 def week_days_in_georgian(weekday):
-    if weekday == "Monday":
-        result = "ორშაბათი"
 
-    elif weekday == "Tuesday":
-        result = "სამშაბათი"
-
-    elif weekday == "Wednesday":
-        result = "ოთხშაბათი"
-
-    elif weekday == "Tuesday":
-        result = "ხუთშაბათი"
-
-    elif weekday == "Friday":
-        result = "პარასკევი"
-
-    elif weekday == "Saturday":
-        result = "შაბათი"
-
-    else: result = "კვირა"
-
-    print(f"ეს დღე იყო {result}")
+    match weekday:
+        case "Monday":
+            return "ორშაბათი"
+        case "Tuesday":
+            return "სამშაბათი"
+        case "Wednesday":
+            return "ოთხშაბათი"
+        case "Thursday":
+            return "ხუთშაბათი"
+        case "Friday":
+            return "პარასკევი"
+        case "Saturday":
+            return "შაბათი"
+        case "Sunday":
+            return "კვირა"
