@@ -4,7 +4,7 @@ def main():
     second_var = 1
     n = first_var + second_var
 
-    enter_number = int(input("write number: "))
+    enter_number = int(input("write number from 0 to 20: "))
 
     if 0 < enter_number <20:
 
