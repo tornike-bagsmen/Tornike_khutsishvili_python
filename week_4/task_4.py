@@ -12,7 +12,6 @@ def main():
             first_var = second_var
             second_var = n
             n = first_var + second_var
-            # enter_number -= 1
 
         print(n)
     else:
