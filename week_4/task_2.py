@@ -6,7 +6,7 @@ def main():
     n_number = int(input("write number from 0 to 30: "))
     
     if 0 < n_number < 30:
-        for i in range(n_number):
+        for _ in range(n_number):
             random_numbers = random.randint(0, 1000)
             num_list.append(random_numbers)
            
